@@ -1,0 +1,21 @@
+addEvent("onClientDXMouseEnter", false)
+addEvent("onClientDXMouseLeave", false)
+addEvent("onClientDXChanged", false)
+addEvent("onClientDXPropertyChanged", false)
+addEvent("onClientDXScroll", false)
+addEvent("onClientDXSpin", false)
+addEvent("onClientDXMove", false)
+addEvent("onClientDXDestroy", false)
+addEvent("onClientDXDestoryAll", false)
+addEvent("dxCloseChat", false)
+addEvent("dxEnterPlate", false)
+addEvent("dxClosePlate", false)
+function clickCheck(_ARG_0_)
+  if not isElement(_ARG_0_) then
+    cancelEvent()
+  end
+end
+addEvent("onClientDXClick", true)
+addEvent("onClientDXDoubleClick", true)
+addEventHandler("onClientDXClick", root, clickCheck)
+addEventHandler("onClientDXDoubleClick", root, clickCheck)
