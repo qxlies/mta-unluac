@@ -2,6 +2,9 @@
 
 MTA:SA decryption and decomplitation tools in one place
 
+> [!WARNING]
+> Only .luac files with light obfuscation can be decompiled; starting from **2 - More**, there may be issues.<br>
+
 ## Tools and usage
 
 ### Python scripts that execute the following commands **on all files in the directory**
